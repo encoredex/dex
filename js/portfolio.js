@@ -1,7 +1,7 @@
 const Portfolio = {
     getPortfolio: function() {
         obj = this;
-        $.getJSON("server/portfolio.json?r="+getRandomInt(1000,100000), function(data) {
+        $.getJSON("https://m2-network.000webhostapp.com/server/portfolio.json?r="+getRandomInt(1000,100000), function(data) {
             portfolio = data;
         });
     },
