@@ -61,7 +61,7 @@ const BuySell = {
                 send.append("symbol",globalSymbol)
                 send.append("id",getRandomInt(1000000,10000000000))
                 $.ajax({
-                    url: "server/buy.php",
+                    url: "https://m2-network.000webhostapp.com/server/buy.php",
                     data: send,
                     type: 'POST',
                     processData: false,
@@ -107,7 +107,7 @@ const BuySell = {
                 send.append("symbol",globalSymbol)
                 send.append("id",getRandomInt(1000000,10000000000))
                 $.ajax({
-                    url: "server/sell.php",
+                    url: "https://m2-network.000webhostapp.com/server/sell.php",
                     data: send,
                     type: 'POST',
                     processData: false,
