@@ -1,7 +1,7 @@
 const Orders = {
     getOrders: function() {
         obj = this;
-        $.getJSON("server/orders.json?r="+getRandomInt(1000,100000), function(data) {
+        $.getJSON("https://m2-network.000webhostapp.com/server/orders.json?r="+getRandomInt(1000,100000), function(data) {
             orders = data;
             obj.show()
         });
